@@ -1,0 +1,61 @@
+body {
+    width:100%;
+    height: 100vh;
+    margin: 0;
+  }
+  label{
+    display: block;
+    margin: 0.5rem 0
+  }
+  legend{
+  font-weight: bold;
+  color: brown
+  }
+  select {
+  width: 50%;
+  height: 30;
+  margin: 0.5rem;
+  }
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+  }
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  nput,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #71F53E;
+    border-color: white;
+    min-width: 300px;
+  }
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  

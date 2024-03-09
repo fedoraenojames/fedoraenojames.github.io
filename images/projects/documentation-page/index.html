@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>technical documentation</title>
+ <link rel="stylesheet" href="./styles.css">
+</head>
+ <body>
+  <div class="label">
+ <nav id="navbar">
+ <header>Progressive Web App Basics</header>
+ <ul>
+ <li>
+ <a class="nav-link"href="#Introduction">Introduction</a>
+ </li>
+ <li>
+ <a class="nav-link"href="#The-HTML">The-HTML</a>
+ </li>
+ <li>
+ <a class="nav-link"href="#The-CSS">The-CSS</a>
+ </li>
+ <li>
+ <a class="nav-link"href="#The_main_app_javaScript">The_main_app_javaScript</a>
+ </li>
+ <li>
+ <a class="nav-link"href="#Reference">Reference</a>
+ </li>
+ </ul>
+ </nav> 
+ <main id="main-doc">
+ <section class="main-section" id="Introduction">
+ <header>Introduction</header>
+ <article>
+ <h3>Progressive web apps use modern web APIs along with traditional progressive enhancement strategy to create cross-platform web applications. These apps work everywhere and provide several features that give them the same user experience advantages as native apps.</h3>
+ <p>HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.</p>
+ <p>CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files (. css).</p>
+<p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.</p>
+<ul>
+<li>HTML  allows the creation and structure of sections, paragraphs, and links using HTML elements.</li>
+<li> CSS describes reusable styles for presenting documents written in a markup language. Its concept was originated by Håkon Wium Lie in 1994. In December 1996.</li>
+<li>avaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages</li>
+</ul>
+</article>
+ </section>
+ <section class="main-section" id="The-HTML">
+ <header>The-HTML</header>
+ <a53rticle>
+ <p>Fron the HTML point of view, the app shell is everything outside the content section. The <code> < head >  </code>
+section contains some basic info like title, description and links to CSS, web manifest,games content JS file, and app js-that where our javaScript application is initialized. The <code>< body > </code>is split into the<code>< header ></code> (containing linked image).<code>< main ></code> page (with title, description and place for a content), and <code>< footer ></code> (copy and links).</p>
+ <p>The app's only job is to list all the A-frame entries from the js13kGame 2017 competition. As you can see it is a very ordinary, one page website - the points is to have something simple so we can focus on the implementation of the actual PWA features.</p>
+ <h1>What should I Known to learn HTML?</h1>
+ <h3>Here's what you'll learn to Known HTML:</h3>
+ <ul>
+ <li>Overview of HTML. A brief introduction to the key concepts in HTML.</li>
+ <li>Document structure. Learn how to structure your HTML documents with a solid foundation.</li>
+ <li>Metadata. How to use meta tags to provide information about your documents.</li>
+ <li>Semantic HTML. ...</li>
+ <li>Headings and sections. ...</li>
+ <li>Attributes. ...</li>
+ <li>Text basics. ...</li>
+ <li>Links.</li>
+ </ul>
+ </article>
+ </section>
+ <section class="main-section" id="The-CSS">
+ <header>The-CSS</header>
+ <article>
+ <p>The CSS is also as plain as possible; it use
+ <code>@font-face</code>
+  to load and use a customer font, and it applies some simple styling of the HTML elements. The overall approach is to have the design look good in both mobile (with a responsive web design approach) and desktop devices.</p>
+ <h1>
+ What is the role of CSS in web?
+ </h1>
+ <p>
+ With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
+ </p>
+ </article>
+ </section>
+ <section class="main-section" id="The_main_app_javaScript">
+ <header>The_main_app_javaScript</header>
+ <article>
+ <p>
+ The app.js first of all it generates the content based on this template:
+ </p>
+ <p>
+ Next, it registers a service worker:
+ </p>
+ <code>
+ if("serviceworker" in navigator){
+ <br>
+ navigator.serviceworker.register
+ <br>
+ (/pwa-examples/js13kpwa/sw.js");};
+ </code>
+ <code>
+ var buttom = document.getElementById
+ <br>
+ ("notifications");buttom,addEventlistener("click", function(e){
+ <br>
+ Notification.requestPermission()
+ <br>
+ .them(function(result) {
+ <br>
+ if(result === "granted") {
+ <br>
+ randomNotification();
+ <br>
+ }
+ <br>
+ }};
+ <br>
+ }};
+ </code>
+ <p>
+ The last block creates notifications that display a randomly-selected item from the games list:
+ </p>
+ <code>
+ function randomNotification() {
+ <br>
+ var randomItem = math.floor(maths.random()
+ <br>
+ "games.length);"
+ <br>
+ var notifitle = games[randomItem].name;
+ <br>
+ var notifBody = "created by
+ "+games[randomItem].author+"-";
+ <br>
+ var notifIng = "data/img/"+games[randomItem].slug+".jpg";
+ <br>
+ var options = {
+ <br>
+ body: notifBody,
+ <br>
+ icon: notifIng
+ <br>
+ }
+ <br>
+ var notif = new notification(notifTitle, options);
+ <br>
+ setTimeout(randomNotification, 30000);
+ <br>
+ }
+ </code>
+ </article>
+ </section>
+ <section class="main-section" id="Reference">
+ <header>Reference</header>
+ <article>
+ <ul>
+ <li>
+ All the document in this page is taken from
+ <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+ </li>
+ </ul>
+ </article>
+ </section>
+ </main>
+ </div>
+ </body>
+ </html>

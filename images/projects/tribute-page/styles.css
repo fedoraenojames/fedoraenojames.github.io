@@ -1,0 +1,46 @@
+body {
+    background-color: #f5f6f7;
+    width: 100%; 
+    height: 100vh;
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    margin:  auto;
+  }
+  
+  p { 
+    font-size: 18px;
+    margin: 1em auto;
+     margin-top: 5px;
+    padding-left: 15px;
+  }
+  
+  h3 {
+    text-align: center;
+    color: #808080;
+  }
+  
+  main{
+    padding-top: 30px;
+  }
+  
+  section {
+    width: 100%; 
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  figcaption{
+    color: #808080;
+  }

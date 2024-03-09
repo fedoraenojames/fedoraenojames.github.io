@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Survey Questionnaire</title>
+    <link rel="stylesheet" href="styles.css" />
+ </head>
+ <body>
+ <h1 id="title">Website Survey Questionnaire</h1>
+ <p id="description">Thank you for taking your time to answer those questions </p>
+ <form id="survey-form" action="https://survey-form.freecodecamp.rocks"> 
+ <fieldset>
+     <legend>Personal Information</legend>
+     <label id="name-label" for="name">1. Enter Your Name: <input id="name" type="text"placeholder="Jane Doe" required /></label>
+     <label id="email-label" for="email">2. Enter Your Email: <input id="email" type="email" placeholder="janedoe@gmail.com" required/></label>
+     <label for="password">3. Enter Your Password: <input id="password" placeholder="your-password" type="password"pattern="[a-z0-9]{8,}" required/></label>
+     <label for="address">4. Enter Your Address: <input id="address" type="address"  placeholder="Apoplot210 abuja queenEsate" required/></label>
+     <label id="number-label" for="number">5. Enter Your Age: <input id="number" type="number"  placeholder="25" min="10"max="100" required.></label>
+ </fieldset>
+ <fieldset>
+   <legend>Site Information</legend>
+   <label>6. Have you ever heard about fedora.com?</label>
+   <label for="Yes"><input id="Yes" type="radio" value="value" name="answer-type"/> Yes </label>
+   <label for="No"><input id="No" type="radio" value="value" name="answer-type" required/> No </label>
+   <label>7. How did you learn about fedora.com?
+   <select id="dropdown">
+     <option value="">(Please select one)</option>
+     <option value="1">Friends and Relative</option>
+     <option value="2">Web search engine</option>
+     <option value="3">Banner Ad</option>
+     <option value="4">E-mail</option>
+     <option value="5">Magazine</option>
+     <option value="6">Other</option>
+   </select>
+   </label>
+   <label>8. What do you what to do with fedora.com?</label>
+   <label for="playgame"><input id="playgame" type="checkbox" value="value" required/> Playgames </label>
+   <label for="watch movie"><input id="watch movie" type="checkbox" value="value" required/> Watch Movie </label>
+   <label for="business plan"><input id="business plan" value="value" type="checkbox" required/> Business Plan</label>
+   <label for="study"><input id="study" type="checkbox" value="value" required/> Study</label>
+ </fieldset>
+ <fieldset>
+   <legend>Your Personal Information About the Website</legend>
+   <label for="like">9. What particular aspect(s) of our website do you like?
+     <textarea id="like" rows="3" cols="30" placeholder="I like the website because...."/></textarea>
+   </label>
+ </fieldset>
+ <input id="submit" type="submit" value="submit"/>
+ </form>
+ </body>
+ <html>
